@@ -1,6 +1,6 @@
 # Define environment
 os: linux  # The default OS
-dist: xenial # Ubuntu 16.04
+dist: xenial
 arch: arm64 # Architecture signifying a containerized version of Linux to boot faster
 
 # Define language
