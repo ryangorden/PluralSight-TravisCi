@@ -1,7 +1,7 @@
 # Require TF version to be same as or greater than 0.12.19
 terraform {
   required_version = ">=0.12.19"
-  /*
+  
   backend "s3" {
     bucket         = "ryan-bucket-travisCI"
     key            = "terraform.tfstate"
@@ -9,7 +9,7 @@ terraform {
     dynamodb_table = "aws-locks"
     encrypt        = true
   }
-*/
+
 }
 
 # Download AWS provider
@@ -36,7 +36,7 @@ locals {
   ssh_key_name          = "cisco_asav_keypair"  # Update only if you've created an SSH key with a different name than cisco_asav_keypair
   asav_public_facing_ip = "172.16.20.10"
 }
-
+*/
 resource "aws_vpc" "aws_vpc" {
   cidr_block = "172.16.0.0/16"
 
@@ -44,7 +44,7 @@ resource "aws_vpc" "aws_vpc" {
     Name = "AwsVpc"
   }
 }
-
+/*
 resource "aws_internet_gateway" "internet_gateway" {
   vpc_id = aws_vpc.aws_vpc.id
 
