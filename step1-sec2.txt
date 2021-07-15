@@ -1,0 +1,31 @@
+
+# Config environment viables for iam user
+export AWS_SECRET_KEY=
+export AWS_ACCESS_KEY_ID=
+
+# initialize terraform
+# should see all green
+terraform init
+
+# see what terraform plans to do
+# look for "plan 2 to add" should be towards the bottom
+terraform plan
+
+# build terraform infrastructure
+# type yes when prompted
+terraform apply
+
+# tell terraform to use resource
+
+#on  main.tf remove comments from backend section 
+# update bucket name to the one we just created
+
+# initialize terraform
+# type yes when prompted
+terraform init
+
+#go to github and create repo for project
+
+#remove .git/ from cloned folder
+#init my own git and link to repo created
+# go to travisCI and link to repo created

@@ -1,0 +1,17 @@
+# make sure .travis.yml is in root dir of project
+# version control the changes
+# push to github
+# travis will try to build the environment
+# it will fail since it need creds for our aws acct
+# set the variblies the settings area of travisCI (website)
+# triger a manual build from terraform 
+# uncomment the local section the asa in it (note of want to create vpc for now so adjust comment area)
+# you can change the name of the vpc to whatever you want
+# create a new branch and move to it
+# add our changes and commit them git push origin <name of current branch>
+# copy pull request url
+# open browser to that page
+# click create pull request
+# when all check pass click show all checks
+# after looking at the plan go back to page on github and hit merge pull request
+# login to aws to verify that the vpc has been created
